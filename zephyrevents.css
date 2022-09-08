@@ -1,0 +1,153 @@
+:root
+{
+    --clear-neutral-900:hsl(207,19%,9%);
+    --clear-neutral-100:hsl(0,0%,100%);
+    --clear-neutral-400:hsl(142,90%,61%);
+}
+
+*,
+*::before,
+*::after
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    display: grid;
+    min-height: 100vh;
+    place-items: center;
+    line-height: 1.6;
+    font-family: monospace;
+    font-size: medium;
+}
+
+.card
+{
+    color: var(--clr-neutral-100);
+    background-image: url(http://images6.fanpop.com/image/photos/40600000/1a656bc92122b3b7ff89a86431b6731f-angeldragons-40607859-564-1001.jpg);
+    background-size: cover;
+    padding: 10rem 0 0;
+    max-width: cover;
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: transform 500s ease;
+}
+
+
+.card:hover, .card:focus-within
+{
+    transform: scale(1.1);
+}
+
+
+.card-content
+{
+    --padding: 3rem;
+    background: hsl(0 0% 0% /0.5);
+    padding: var(--padding);
+    transform: translateY(50%);
+    transition: transform 500ms ease;
+    transition-delay: 200ms ;
+    background: linear-gradient(hsl(0 0% 0% /0), hsl(20 0% 0% /0.3) 20%, hsl(0 0% 0% /1) );
+}
+
+
+
+@media(hover)
+{
+    .card-content
+    {
+        transform: translateY(50%);
+        transition: transform 500ms ease;
+    }
+}
+.card:hover .card-content
+{
+    transform:translateY(0);
+    transition-delay: 10ms;
+}
+
+.card-content > *:not(.card-title)
+{
+    opacity: 0;
+    transition: opacity 500ms linear;
+}
+
+.card:hover .card-content > *
+{
+    opacity: 1;
+
+}
+.card-title::after
+{
+    position: absolute;
+    height: 9px;
+    width: calc(100% + var(--padding));
+    background: var(--clr-accent-400);
+    bottom: 10px;
+    left: calc(var(--padding) * -1);
+    transform: scaleX(0);
+    transition: transform 500ms ease;
+    transform: left;
+    bottom: -2px;
+
+}
+
+.card:hover .card-title::after
+{
+    transform: scaleX(1);
+}
+.card-title
+{
+    position: relative;
+    color: white;
+    width: max-content;
+
+}
+
+.button
+{
+    cursor: pointer;
+    display: inline;
+    text-decoration: none;
+    color: var(--clr-neutral-900);
+    background-color: wheat;
+    padding: 0.5rem 1.25em;
+    border-radius: .25em;
+}
+
+.button:hover, .botton:focus
+{
+    background: var(--clear-neutral-100);
+}
+
+.card-body
+{
+    color: rgb(255 255 255 / 0.85);
+}
+
+
+.flex-container
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    justify-items: center;
+    margin: 20px;
+    
+}
+
+*
+{
+    column-gap: 160px;
+    row-gap: 100px;
+    padding: 3px;
+    box-sizing: border-box;
+    margin: cover;
+    size-adjust: 100px;
+    
+}
