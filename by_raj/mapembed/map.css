@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #000;
+}
+.containermap {
+  margin: auto;
+  width: 80vw;
+  height: 70vh;
+  background-color: gray;
+  border-radius: 20px;
+  display: flex;
+  padding: 1rem;
+  justify-content: space-around;
+}
+.address {
+  width: 50%;
+  order: 1;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+  margin: 1rem;
+  border-radius: 20px;
+}
+.map {
+  order: 2;
+  width: 59%;
+}
+.map iframe {
+  border-radius: 20px;
+  margin: 1rem auto;
+  width: 100%;
+}
+.city {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+  line-height: 3rem;
+  padding: 1rem;
+}
+.add {
+  display: flex;
+  padding: 1rem;
+  margin: 0 auto;
+}
+.add > i {
+  padding: 1rem;
+}
+.add h4 {
+  padding: 1rem;
+  text-align: start;
+}
+.phone {
+  display: flex;
+
+  padding: 1rem;
+  margin: 0 auto;
+}
+.phone i {
+  padding: 1rem;
+}
+.phone h4 {
+  padding: 1rem;
+  line-height: 3rem;
+}
+.mail {
+  display: flex;
+  margin: 0 1rem;
+  align-items: center;
+}
+.mail i {
+  padding: 1rem;
+}
+.input {
+  width: 60%;
+  height: 2rem;
+  border-radius: 10px;
+  text-align: center;
+}
+.mail > button {
+  margin: 0 0.5rem;
+  padding: 0.3rem;
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  .body {
+    font-size: 10px;
+  }
+  .containermap {
+    margin: auto;
+    width: 100vw;
+    height: max-content;
+    background-color: gray;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    justify-content: space-around;
+  }
+  .address {
+    width: 100%;
+    order: 1;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    margin: 1rem;
+    border-radius: 20px;
+  }
+  .map {
+    order: 2;
+    width: 100%;
+  }
+  .map iframe {
+    border-radius: 20px;
+    margin: 1rem auto;
+    width: 100%;
+  }
+  .city {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    line-height: 3rem;
+    padding: 1rem;
+  }
+  .add {
+    display: flex;
+    padding: 1rem;
+    margin: 0 auto;
+  }
+  .add > i {
+    padding: 1rem;
+  }
+  .add h4 {
+    padding: 1rem;
+    text-align: start;
+  }
+  .phone {
+    display: flex;
+
+    padding: 1rem;
+    margin: 0 auto;
+  }
+  .phone i {
+    padding: 1rem;
+  }
+  .phone h4 {
+    padding: 1rem;
+    line-height: 3rem;
+  }
+  .mail {
+    display: flex;
+    margin: 0 1rem;
+    align-items: center;
+  }
+  .mail i {
+    padding: 1rem;
+  }
+  .input {
+    width: 60%;
+    height: 2rem;
+    border-radius: 10px;
+    text-align: center;
+  }
+  .mail > button {
+    margin: 0 0.5rem;
+    padding: 0.3rem;
+    font-weight: bold;
+  }
+}
