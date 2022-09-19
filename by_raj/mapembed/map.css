@@ -9,7 +9,7 @@ body {
 .containermap {
   margin: auto;
   width: 80vw;
-  height: 70vh;
+  height: max-content;
   background-color: gray;
   border-radius: 20px;
   display: flex;
