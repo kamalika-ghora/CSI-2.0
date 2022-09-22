@@ -7,6 +7,12 @@
     position: relative;
   }
   
+  body {
+    color: black;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+  }
   /* The actual timeline (the vertical ruler) */
   .main-timeline-4::after {
     content: "";
@@ -496,6 +502,4 @@
   background-repeat:no-repeat;
   margin-top:-100px;
 }
-
-
 

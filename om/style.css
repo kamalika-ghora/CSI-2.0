@@ -7,7 +7,9 @@
   --bg-secondary: #141418;
   --transition-speed: 600ms;
 }
-
+*{
+  font-family: monospace;
+}
 body {
   color: black;
   background-color: white;
