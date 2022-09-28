@@ -13,7 +13,9 @@
 body{
     background: url("./QFNv.gif");
 }
-
+*{
+  font-family: monospace;
+}
 /*css for timeline*/
 .maintimelinediv{
     margin-top: 1rem;
@@ -223,7 +225,7 @@ body {
 }
 .containermap {
   margin: auto;
-  width: 80vw;
+  width: 60vw;
   height: max-content;
   background-color: gray;
   border-radius: 20px;
@@ -244,6 +246,7 @@ body {
 .map {
   order: 2;
   width: 59%;
+  margin-right: 1rem;
 }
 .map iframe {
   border-radius: 20px;
