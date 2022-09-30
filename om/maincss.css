@@ -230,9 +230,10 @@ body {
 }
 .address {
   color: #fff;
+  text-align: center;
   width: 50%;
-  margin: 1rem auto;
-  font-size: 0.8rem;
+  margin: 0.5rem auto;
+  font-size: small;
 }
 .map {
   order: 2;
@@ -244,11 +245,7 @@ body {
 }
 .city {
   display: flex;
-  justify-content: space-between;
-
-  width: 100%;
-  line-height: 3rem;
-  padding: 1rem;
+  padding: 1.5rem;
 }
 .add {
   display: flex;
@@ -258,7 +255,7 @@ body {
 .add > i {
   padding: 1rem;
 }
-.add h4 {
+.add h6 {
   padding: 1rem;
   text-align: start;
 }
@@ -271,9 +268,9 @@ body {
 .phone i {
   padding: 1rem;
 }
-.phone h4 {
+.phone h6 {
   padding: 1rem;
-  line-height: 3rem;
+  line-height: 2rem;
 }
 .mail {
   display: flex;
